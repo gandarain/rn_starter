@@ -7,7 +7,7 @@
     "ios": "make run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
+    "lint": "eslint . --cache",
     "type-check": "tsc --build",
     "prepare": "husky install",
     "pod:install": "make pod-install"

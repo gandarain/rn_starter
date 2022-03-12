@@ -58,3 +58,32 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# NodeJS
+node_modules/
+yarn-error.log
+
+# IntelliJ IDEA
+.idea/
+
+# Mac OS
+.DS_Store
+
+# build
+build/
+
+# eslint
+.eslintcache
+
+# jest
+coverage/
+tmp/
+test-report.xml
+
+# JSDocs
+docs/
+
+# Others
+.watchmanconfig
+.flowconfig
+
