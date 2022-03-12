@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "make run-android",
+    "ios": "make run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
     "type-check": "tsc --build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pod:install": "make pod-install"
   },
   "dependencies": {
     "@types/react": "^17.0.40",
