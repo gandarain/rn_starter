@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "type-check": "tsc --build"
+    "type-check": "tsc --build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/react": "^17.0.40",
@@ -25,7 +26,8 @@
     "eslint": "7.14.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
-    "react-test-renderer": "17.0.2"
+    "react-test-renderer": "17.0.2",
+    "husky": "^7.0.0"
   },
   "jest": {
     "preset": "react-native"
