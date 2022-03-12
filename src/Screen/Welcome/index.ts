@@ -1,1 +1,1 @@
-export { default } from './WelcomeComponent';
+export { default } from './Welcome.component';
