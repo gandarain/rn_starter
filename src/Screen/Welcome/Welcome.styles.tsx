@@ -8,4 +8,9 @@ export default StyleSheet.create<Styles>({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  title: {
+    fontFamily: 'Roboto-Bold',
+    fontSize: 20,
+    color: '#333333',
+  },
 });

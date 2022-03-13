@@ -1,7 +1,8 @@
-import { ViewStyle } from 'react-native';
+import { ViewStyle, TextStyle } from 'react-native';
 
 export type Props = {};
 
 export type Styles = {
   container: ViewStyle;
+  title: TextStyle;
 };
