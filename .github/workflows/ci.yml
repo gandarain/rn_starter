@@ -1,14 +1,18 @@
 name: CI
 
-on: [pull_request]
+on: 
+  push:
+    branches:    
+      - master 
 
 jobs:
   build:
-    runs-on: ubuntu-latest
 
+    runs-on: ubuntu-latest
+    
     strategy:
       matrix:
-        node-version: [10.x, 8.x, 14.x]
+        node-version: [10.x, 8.x]
     
     steps:
     - uses: actions/checkout@v1
@@ -20,11 +24,3 @@ jobs:
     - name: yarn install
       run: |
         yarn install
-    
-    - name: yarn type check
-      run: |
-        tsc --build
-
-     - name: yarn test coverage
-      run: |
-        yarn test:coverage -u
