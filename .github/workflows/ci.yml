@@ -26,10 +26,10 @@ jobs:
       run: yarn install
     
     - name: Run lint
-      run: ./node_modules/.bin/eslint --init
+      run: yarn lint
     
     - name: Run type check
-      run: tsc --build
+      run: yarn type-check
 
     - name: Run the tests
-      run: yarn test:coverage -u
+      run: yarn code-coverage

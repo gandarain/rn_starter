@@ -11,7 +11,10 @@
     "test:view": "open coverage/lcov-report/index.html",
     "prepare": "husky install",
     "pod-install": "make pod-install",
-    "pre-commit": "make pre-commit"
+    "pre-commit": "make pre-commit",
+    "lint": "./node_modules/.bin/eslint",
+    "type-check": "tsc --noemit",
+    "code-coverage": "yarn test:coverage -u --runInBand"
   },
   "dependencies": {
     "@types/react": "^17.0.40",
