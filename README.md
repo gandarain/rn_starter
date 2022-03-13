@@ -72,6 +72,28 @@ module.exports = {
 - Open project with xcode cd `ios/open project-name.xcworkspace`.
 - Remove icons, open `Build Phases`, remove icons from `Copy Bundle Resources`.
 
+## Setup Jest
+- `yarn add -D @testing-library/react-native @types/jest ts-jest`.
+- Remove this lint `jest: {}` from `package.json`.
+- Create a new file `jest.config.js`.
+  ````
+  /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+  module.exports = {
+    globals: {
+      __DEV__: true,
+    },
+    preset: 'react-native',
+    testEnvironment: 'node',
+    setupFiles: ['<rootDir>/jest/setup.ts'],
+    testPathIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/jest'],
+  };
+  ````
+- Create a new folder `jest` and a new file `setup.ts`.
+- Add this code `"jest/setup.ts"` inside `tsconfig.json -> exclude`.
+- Add this code `ignorePatterns: ['jest/*.ts']` inside `eslintrc.js`.
+- Add this script `"test:coverage": "TZ='Asia/Jakarta' jest --expand --collectCoverage"` and `"test:view": "open coverage/lcov-report/index.html"` to collect the coverage code.
+- Change `pre-commit` inside `makefile` to `eslint . --cache && tsc --build && yarn test:coverage -u --runInBand` to generate code coverage when committing.
+
 ## How to run
 - Clone this repository.
 - `yarn install && yarn pod-install`.
