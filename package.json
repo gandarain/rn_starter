@@ -7,16 +7,17 @@
     "ios": "make run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --cache",
-    "type-check": "tsc --build",
     "prepare": "husky install",
-    "pod:install": "make pod-install"
+    "pod-install": "make pod-install",
+    "pre-commit": "make pre-commit"
   },
   "dependencies": {
     "@types/react": "^17.0.40",
     "@types/react-native": "^0.67.2",
+    "@types/react-native-vector-icons": "^6.4.10",
     "react": "17.0.2",
     "react-native": "0.67.3",
+    "react-native-vector-icons": "^9.1.0",
     "typescript": "^4.6.2"
   },
   "devDependencies": {
@@ -25,17 +26,18 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
     "eslint": "7.14.0",
+    "husky": "^7.0.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
-    "react-test-renderer": "17.0.2",
-    "husky": "^7.0.0"
+    "react-test-renderer": "17.0.2"
   },
   "jest": {
     "preset": "react-native"
   },
   "rnpm": {
     "assets": [
-      "./src/Assets/Fonts"
+      "./src/Assets/Fonts",
+      "./src/Assets/Icons"
     ]
   }
 }
