@@ -13,7 +13,7 @@ exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
   <Text
     style={
       Object {
-        "color": "#333333",
+        "color": "#1c1c1c",
         "fontFamily": "Roboto-Bold",
         "fontSize": 20,
       }
