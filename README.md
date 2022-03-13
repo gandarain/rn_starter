@@ -1,6 +1,26 @@
 # React Native Starter with Typescript
 
-## Add Font Family
+## Generate a new project
+- `react-native init project_name --template react-native-template-typescript`
+- Somehow it will error, but it's fine.
+- Add this dependency,
+  - `yarn add @types/react`
+  - `yarn add @types/react-native`
+  - `yarn add typescript`
+- Change `App.js` to `App.tsx`.
+
+## Setup makefile
+- Create a new file `makefile`.
+- Add some command like `eslint . --cache && tsc --build`, and call it `pre-commit`.
+- Use that command on the `package.json`.
+- Run `yarn pre-commit`.
+
+## Setup Husky
+- `npx husky-init && yarn`.
+- Copy `yarn pre-commit`.
+- `yarn pre-commit` will always run when you commit something.
+
+## Add font family
 - Add font on `src/Assets/Fonts`.
 - Create a new file `react-native.config.js`.
 - Add this code on `react-native.config.js`.
@@ -50,4 +70,9 @@ module.exports = {
 
 ### It will error while run on ios
 - Open project with xcode cd `ios/open project-name.xcworkspace`.
-- Remove icons, open `Build Phases`, remove icons from `Copy Bundle Resources`
+- Remove icons, open `Build Phases`, remove icons from `Copy Bundle Resources`.
+
+## How to run
+- Clone this repository.
+- `yarn install && yarn pod-install`.
+- `yarn start` then `yarn ios` or `yarn android`.
