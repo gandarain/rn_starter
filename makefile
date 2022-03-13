@@ -1,7 +1,10 @@
+# Run Pre Commit
+pre-commit:
+	eslint . --cache && tsc --build
 
 # ANDROID COMMANDS
 run-android:
-	react-native run-android"
+	react-native run-android
 
 
 # IOS COMMANDS
