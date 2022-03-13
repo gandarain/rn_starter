@@ -94,6 +94,11 @@ module.exports = {
 - Add this script `"test:coverage": "TZ='Asia/Jakarta' jest --expand --collectCoverage"` and `"test:view": "open coverage/lcov-report/index.html"` to collect the coverage code.
 - Change `pre-commit` inside `makefile` to `eslint . --cache && tsc --build && yarn test:coverage -u --runInBand` to generate code coverage when committing.
 
+## Setup CI/CD
+This is basic ci/cd, to run `lint, type check, test, and coverage` when there is a pull request to `master`.
+- Create a new folder `.github/workflows`  file `ci.yml`.
+- Just copy paste the `ci.yml`.
+
 ## How to run
 - Clone this repository.
 - `yarn install && yarn pod-install`.

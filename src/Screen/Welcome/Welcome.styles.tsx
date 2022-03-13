@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 
+import { Colors } from '../../Constants';
 import type { Styles } from './types';
 
 export default StyleSheet.create<Styles>({
@@ -11,6 +12,6 @@ export default StyleSheet.create<Styles>({
   title: {
     fontFamily: 'Roboto-Bold',
     fontSize: 20,
-    color: '#333333',
+    color: Colors.BLACK,
   },
 });
