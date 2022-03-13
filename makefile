@@ -1,6 +1,6 @@
 # Run Pre Commit
 pre-commit:
-	eslint . --cache && tsc --build
+	eslint . --cache && tsc --build && yarn test:coverage -u --runInBand
 
 # ANDROID COMMANDS
 run-android:

@@ -1,7 +1,16 @@
 module.exports = {
   root: true,
   extends: '@react-native-community',
-  ignorePatterns: ['jest/*.js'],
+  ignorePatterns: ['jest/*.ts'],
+  overrides: [
+    {
+      files: ['**/*.test.ts'],
+      rules: {
+        'max-lines-per-function': 'off',
+        'react/prop-types': 'off', // Turned off because sometimes we need to mock components with own implementation
+      },
+    },
+  ],
   rules: {
     'require-jsdoc': [
       'error',

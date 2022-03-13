@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333333",
+        "fontFamily": "Roboto-Bold",
+        "fontSize": 20,
+      }
+    }
+  >
+    Hello
+  </Text>
+  <Icon
+    color="#900"
+    name="rocket"
+    size={30}
+  />
+</View>
+`;
