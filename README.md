@@ -1,4 +1,4 @@
-# rn_starter
+# React Native Starter with Typescript
 
 ## Add Font Family
 - Add font on `src/Assets/Fonts`.
