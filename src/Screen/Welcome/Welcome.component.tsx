@@ -9,7 +9,7 @@ import styles from './Welcome.styles';
  */
 const WelcomeScreen: React.ReactNode = () => (
   <View style={styles.container}>
-    <Text>Hello</Text>
+    <Text style={styles.title}>Hello</Text>
   </View>
 );
 
