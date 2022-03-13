@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   extends: '@react-native-community',
-  ignorePatterns: ['jest/*.ts'],
+  ignorePatterns: ['jest/*.ts', 'coverage/'],
   overrides: [
     {
       files: ['**/*.test.ts'],
