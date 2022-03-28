@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
-<View
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
   style={
     Object {
       "alignItems": "center",
       "flex": 1,
-      "justifyContent": "center",
     }
   }
 >
@@ -37,5 +37,5 @@ exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
     name="rocket"
     size={25}
   />
-</View>
+</RCTSafeAreaView>
 `;
