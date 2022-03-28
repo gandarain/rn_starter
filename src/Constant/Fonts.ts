@@ -8,6 +8,7 @@ const Fonts = {
     BOLD: 'BOLD',
     BOLD_ITALIC: 'BOLD_ITALIC',
     ITALIC: 'ITALIC',
+    REGULAR: 'REGULAR',
   },
 };
 

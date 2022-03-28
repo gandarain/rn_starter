@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { Colors } from '../../Constants';
+import { Colors } from '../../Constant';
 import type { Styles } from './types';
 
 export default StyleSheet.create<Styles>({
