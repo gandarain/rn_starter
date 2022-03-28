@@ -26,7 +26,6 @@ module.exports = {
     ],
     'valid-jsdoc': 'error',
     'no-underscore-dangle': 'off',
-    'object-curly-newline': ['error', { minProperties: 4, consistent: true }],
 
     // react specific
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx', 'js'] }],

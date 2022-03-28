@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import { GeneralText } from '../../Component';
+import { GeneralText, Wrapper } from '../../Component';
 import { Colors, Fonts } from '../../Constant';
 import type { Props } from './types';
 import styles from './Welcome.styles';
@@ -13,7 +13,7 @@ import styles from './Welcome.styles';
  * @constructor
  */
 const WelcomeScreen: React.FC<Props> = (): JSX.Element => (
-  <View style={styles.container}>
+  <Wrapper>
     <Text style={styles.title}>Hello</Text>
     <GeneralText
       title="Hello"
@@ -22,7 +22,7 @@ const WelcomeScreen: React.FC<Props> = (): JSX.Element => (
       size={Fonts.SIZE.LARGE}
     />
     <Icon name="rocket" size={Fonts.SIZE.LARGE} color={Colors.RED} />
-  </View>
+  </Wrapper>
 );
 
 export default WelcomeScreen;

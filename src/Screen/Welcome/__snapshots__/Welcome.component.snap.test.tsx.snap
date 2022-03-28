@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "justifyContent": "center",
-    }
-  }
->
+<Wrapper>
   <Text
     style={
       Object {
@@ -21,21 +13,16 @@ exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
   >
     Hello
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#1c1c1c",
-        "fontFamily": "Roboto-Bold",
-        "fontSize": 25,
-      }
-    }
-  >
-    Hello
-  </Text>
+  <GeneralText
+    color="#1c1c1c"
+    size={25}
+    title="Hello"
+    variant="Roboto-Bold"
+  />
   <Icon
     color="#ea3d13"
     name="rocket"
     size={25}
   />
-</View>
+</Wrapper>
 `;
