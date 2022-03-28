@@ -18,4 +18,4 @@ ios-build-remove:
 
 # Run IOS application locally while passing on .env configuration file
 run-ios:
-	react-native run-ios --simulator="iPhone 6s"
+	react-native run-ios --simulator="iPhone 6"

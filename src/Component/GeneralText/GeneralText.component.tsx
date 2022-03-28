@@ -3,6 +3,7 @@ import { Text } from 'react-native';
 
 import config from './GeneralText.config';
 import { Props } from './types';
+import styles from './GeneralText.styles';
 
 /**
  * GeneralText
@@ -10,7 +11,14 @@ import { Props } from './types';
  * @return {JSX.Element} - GeneralText Component
  * @constructor
  */
-const GeneralText: React.FC<Props> = (): JSX.Element => <Text>Hello</Text>;
+const GeneralText: React.FC<Props> = ({
+  title,
+  color,
+  variant,
+  size,
+}: Props): JSX.Element => (
+  <Text style={styles.title(color, variant, size)}>{title}</Text>
+);
 
 GeneralText.displayName = config.displayName;
 GeneralText.defaultProps = config.defaultProps;

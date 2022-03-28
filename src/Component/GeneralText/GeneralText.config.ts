@@ -1,4 +1,4 @@
-import Utils from '../Utils';
+import Utils from '../../Utils';
 
 const {
   DefaultData: { emptyString },
@@ -7,7 +7,7 @@ const {
 const displayName = 'GeneralText';
 const defaultProps = {
   title: emptyString,
-  type: emptyString,
+  size: 0,
   color: emptyString,
   variant: emptyString,
 };

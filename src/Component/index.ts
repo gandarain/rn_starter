@@ -1,1 +1,1 @@
-export { default } from './GeneralText.component';
+export { default as GeneralText } from './GeneralText';
