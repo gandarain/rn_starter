@@ -21,10 +21,21 @@ exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
   >
     Hello
   </Text>
+  <Text
+    style={
+      Object {
+        "color": "#1c1c1c",
+        "fontFamily": "Roboto-Bold",
+        "fontSize": 25,
+      }
+    }
+  >
+    Hello
+  </Text>
   <Icon
-    color="#900"
+    color="#ea3d13"
     name="rocket"
-    size={30}
+    size={25}
   />
 </View>
 `;

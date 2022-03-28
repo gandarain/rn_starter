@@ -1,14 +1,13 @@
 const Fonts = {
-  TYPE: {
-    LARGE: 'LARGE',
-    MEDIUM: 'MEDIUM',
-    SMALL: 'SMALL',
+  SIZE: {
+    LARGE: 25,
+    MEDIUM: 20,
+    SMALL: 15,
   },
   VARIANT: {
-    BOLD: 'BOLD',
-    BOLD_ITALIC: 'BOLD_ITALIC',
-    ITALIC: 'ITALIC',
-    REGULAR: 'REGULAR',
+    BOLD: 'Roboto-Bold',
+    ITALIC: 'Roboto-Italic',
+    REGULAR: 'Roboto-Regular',
   },
 };
 
