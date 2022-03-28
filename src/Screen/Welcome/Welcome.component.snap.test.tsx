@@ -6,6 +6,7 @@ import WelcomeComponent from './Welcome.component';
 jest.mock('../../Component', () => ({
   GeneralText: 'GeneralText',
   Wrapper: 'Wrapper',
+  Button: 'Button',
 }));
 
 describe('<WelcomeComponent />', () => {
