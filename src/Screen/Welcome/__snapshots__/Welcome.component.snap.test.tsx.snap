@@ -24,5 +24,27 @@ exports[`<WelcomeComponent /> Should render WelcomeComponent 1`] = `
     name="rocket"
     size={25}
   />
+  <View
+    style={
+      Object {
+        "padding": 20,
+        "width": "100%",
+      }
+    }
+  >
+    <Button
+      color="#61dafb"
+      height={60}
+      onPress={[Function]}
+      width="100%"
+    >
+      <GeneralText
+        color="#1c1c1c"
+        size={25}
+        title="Button"
+        variant="Roboto-Bold"
+      />
+    </Button>
+  </View>
 </Wrapper>
 `;
