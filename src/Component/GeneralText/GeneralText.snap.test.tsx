@@ -1,6 +1,7 @@
 import * as React from 'react';
 import renderer from 'react-test-renderer';
 
+import { Colors } from '../../Constant';
 import Utils from '../../Utils';
 
 const {
@@ -11,7 +12,7 @@ import GeneralText from './GeneralText.component';
 const defaultProps = {
   title: emptyString,
   size: 0,
-  color: emptyString,
+  color: Colors.BLACK,
   variant: emptyString,
 };
 
